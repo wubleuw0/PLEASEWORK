@@ -136,6 +136,7 @@ runButton.onclick = function convert(){
         
     }
     let RNA = RNAOut.innerHTML;
+    console.log(RNA);
     protienOut.innerHTML = "";
     for(let i = 1; i <= (RNA.length / 3); i++){
         let char1 = RNA.charAt(i * 3 - 3);
@@ -151,5 +152,6 @@ runButton.onclick = function convert(){
         }
         
         protienOut.innerHTML = `${protienOut.innerHTML}${dash}${KEY[char1][char2][char3]}`;
-    }
+    };
+    console.log(protienOut.innerHTML);
 };
