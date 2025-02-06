@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+t{
+    font-size: 2em;
+    color: aliceblue;
+}
+#tableimg{
+    width: 600px;
+    height: 400px;
+}
+input{
+    width: 400px;
+    height: 20px;
+    background-color: rgb(255, 228, 194);
+}
+button{
+    width: 323.6px;
+    height: 150px;
+    border-radius: 36px;
+    border-width: 3px;
+    background-color: red;
+}
+#outputContainer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 90px;
+    background-color: blue;
+}
+pre{
+    text-align: left;
+    color: red;
+}
