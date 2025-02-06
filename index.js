@@ -1,8 +1,10 @@
 let DNAInput = document.getElementById("dnaInput");
 let runButton = document.getElementById("runButton");
+let randButton = document.getElementById("randButton");
 let RNAOut = document.getElementById("rnaOut");
 let protienOut = document.getElementById("protienOut");
 
+let DNABases = ["A", "T", "C", "G"]
 let KEY = {
     U: {
         U: {
@@ -110,6 +112,14 @@ let KEY = {
     }
 };
 
+randButton.onclick = function generate(){
+    let DNA = DNAInput.value;
+    for(let i = 0; i <= (1 * 3) - 1; i++){
+        DNA = `${DNA}${DNABases[Math.round(Math.random() * 3)]}`;
+    }
+    DNAInput.value = DNA;
+}
+
 runButton.onclick = function convert(){
     let DNA = DNAInput.value;
     RNAOut.innerHTML = "";
@@ -136,7 +146,7 @@ runButton.onclick = function convert(){
         
     }
     let RNA = RNAOut.innerHTML;
-    console.log(RNA);
+    console.log(RNA)
     protienOut.innerHTML = "";
     for(let i = 1; i <= (RNA.length / 3); i++){
         let char1 = RNA.charAt(i * 3 - 3);
@@ -153,5 +163,5 @@ runButton.onclick = function convert(){
         
         protienOut.innerHTML = `${protienOut.innerHTML}${dash}${KEY[char1][char2][char3]}`;
     };
-    console.log(protienOut.innerHTML);
+    console.log(protienOut.innerHTML)
 };

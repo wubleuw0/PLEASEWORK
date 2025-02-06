@@ -6,6 +6,10 @@ t{
     font-size: 2em;
     color: aliceblue;
 }
+#tt{
+    font-size: 1em;
+    color: aliceblue;
+}
 #tableimg{
     width: 600px;
     height: 400px;
@@ -15,10 +19,17 @@ input{
     height: 20px;
     background-color: rgb(255, 228, 194);
 }
-button{
+#runButton{
     width: 323.6px;
     height: 150px;
     border-radius: 36px;
+    border-width: 3px;
+    background-color: red;
+}
+#randButton{
+    width: 161.5px;
+    height: 50px;
+    border-radius: 25px;
     border-width: 3px;
     background-color: red;
 }
